@@ -13,7 +13,7 @@ void main() {
 List<int> fibonacciNumbers(int chosenNumber) {
   List<int> fibList = [1, 1];
 
-  for (var i = 0; i < chosenNumber-2; i++) {
+  for (var i = 0; i < chosenNumber-2; i++) { 
     fibList.add(fibList[i] + fibList[i + 1]);
   }
   return fibList;

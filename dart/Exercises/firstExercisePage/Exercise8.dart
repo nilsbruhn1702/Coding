@@ -13,15 +13,14 @@ void main(){
   while (gameStatus == true){
     var paperRockSizzle = const ['Paper', 'Rock', 'Scissors'];
     paperRockSizzle.shuffle();
-    const computerChoice = paperRockSizzle.first;
+    String computerChoice = paperRockSizzle.first;
     print('''Enter your Choice: 'Paper', 'Rock' or 'Scissors' ''');
     String? playerChoice = stdin.readLineSync();
     if (playerChoice == computerChoice || ((playerChoice != ('Scissors')) && (playerChoice != ('Rock')) && (playerChoice != ('Paper')))){
       print('the computer chose the same thing or your input was invalid, try again');
       continue;
     }
-    switch (rules[playerChoice]){
-      case computerChoice:
+    
       
     }
     
