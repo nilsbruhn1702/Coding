@@ -11,16 +11,17 @@ void main(){
   bool gameStatus = true;
 
   while (gameStatus == true){
-    List paperRockSizzle = ['Paper', 'Rock', 'Scissors'];
+    var paperRockSizzle = const ['Paper', 'Rock', 'Scissors'];
     paperRockSizzle.shuffle();
-    String computerChoice = paperRockSizzle.first;
+    const computerChoice = paperRockSizzle.first;
     print('''Enter your Choice: 'Paper', 'Rock' or 'Scissors' ''');
     String? playerChoice = stdin.readLineSync();
     if (playerChoice == computerChoice || ((playerChoice != ('Scissors')) && (playerChoice != ('Rock')) && (playerChoice != ('Paper')))){
       print('the computer chose the same thing or your input was invalid, try again');
       continue;
     }
-    switch (rules){
+    switch (rules[playerChoice]){
+      case computerChoice:
       
     }
     
